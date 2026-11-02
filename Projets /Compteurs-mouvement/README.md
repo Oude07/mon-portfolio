@@ -20,6 +20,10 @@ L'objectif est de concevoir un dispositif pratique utilisant Arduino et un capte
 - Écran LCD avec interface I2C
 - Fils de connexion
 
+## Schéma électronique
+
+![Schéma du compteur](schema-compteur.png)
+
 ## 4. Fonctionnement
 
 Le capteur mesure la distance entre le dispositif et un objet. Arduino analyse les variations de distance et utilise un programme pour déterminer si un mouvement correspond à une répétition.
