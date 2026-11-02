@@ -22,7 +22,7 @@ L'objectif est de concevoir un dispositif pratique utilisant Arduino et un capte
 
 ## Schéma électronique
 
-![Schéma du compteur](schema-compteur.png)
+![Schéma du compteur](Schéma -compteur .png)
 
 ## 4. Fonctionnement
 
