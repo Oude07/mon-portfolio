@@ -41,10 +41,25 @@ Le résultat est ensuite affiché sur l'écran LCD.
 ## 6. État du projet
 
 Projet en cours de développement.
+## 7. Difficultés rencontrées
 
-## 7. Améliorations envisagées
+Au cours du développement de ce projet, j'ai travaillé sur plusieurs aspects techniques :
+
+La compréhension du fonctionnement du capteur ultrasonique.
+
+La communication entre Arduino et l'écran LCD via I2C.
+
+La programmation de la détection des mouvements.
+
+La gestion du comptage pour éviter les répétitions détectées plusieurs fois.
+
+Ces difficultés m'ont permis de mieux comprendre l'interaction entre les composants électroniques et le programme informatique.
+## 8. Améliorations envisagées
 
 - Améliorer la précision de détection.
 - Éviter les doubles comptages.
 - Optimiser le fonctionnement du système.
 - Concevoir un dispositif physique compact.
+## 9. Montages réalisés 
+
+en cours de réalisation . Il est a noter que le programme a été tester sur le logiciel TINKERCAD et est totalement opperationnel . 
