@@ -62,7 +62,9 @@ Ces difficultés m'ont permis de mieux comprendre l'interaction entre les compos
 - Concevoir un dispositif physique compact.
 ## 9. Montages réalisés 
 
-WhatsApp Video 2026-11-16 at 12.03.52.mp4
+## 🎥 Démonstration du projet
+
+https://github.com/Oude07/Compteurs-mouvement/raw/main/Projets/Video%.mp4
 
 ## 10. Commentaire 
 J'ai commencé par tester le programme avec un digit 7 segment , ce qui m'a permis de comprendre le fonctionnement de l'appareil et sont branchement . Par la même occasion j'ai eu a rencontrer des problèmes par rapport a la nature du 7 segment si il s'agit d'un anode commun le branchement commun se fait sur le 5v par contre si il s'agit d'un cathode commun le branchement ce fait sur le GND . Et par la meme occasion le code change en fonction de la nature de cette appareil . j'ai rencontrer un autre probleme avec le capteur , théoriquement j'ai travaillé avec un capteur ultrasonique 3 broches mais quand j'ai eu les pieces j'ai eu un capteur 4 broches ca change aussi le code . 
