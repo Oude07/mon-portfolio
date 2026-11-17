@@ -1,12 +1,14 @@
 // C++ code
 //
 #include "Wire.h"
-#include "Adafruit_LiquidCrystal.h"
+#include "LiquidCrystal_I2C.h"
 
 // Initialisation de l'écran via I2C. 
+// Le "0" correspond à l'adresse par défaut (A0, A1, A2 non pontés)
+LiquidCrystal_I2C lcd(0x27 , 16,2);
+const int TrigPin = 9;
+const int echoPin=10 ;
 
-Adafruit_LiquidCrystal lcd(0x27);
-const int pingPin = 2;
 
 float distanceActuelle = 0;
 
@@ -16,16 +18,16 @@ int compteur = 0;
 
 float mesurerDistance() {
   // Envoyer l'impulsion ultrasonique
-  pinMode(pingPin, OUTPUT);
-  digitalWrite(pingPin, LOW);
+  pinMode(TrigPin, OUTPUT);
+  digitalWrite(TrigPin, LOW);
   delayMicroseconds(2);
-  digitalWrite(pingPin, HIGH);
+  digitalWrite(TrigPin, HIGH);
   delayMicroseconds(5);
-  digitalWrite(pingPin, LOW);
+  digitalWrite(TrigPin, LOW);
 
   // Recevoir l'écho
-  pinMode(pingPin, INPUT);
-  long duree = pulseIn(pingPin, HIGH, 30000);
+  pinMode(echoPin, INPUT);
+  long duree = pulseIn(echoPin, HIGH, 30000);
 
   // Vérifier si une mesure a été reçue
   if (duree == 0) {
@@ -38,10 +40,10 @@ float mesurerDistance() {
 
 void setup() {
   // Initialise l'écran avec ses dimensions (16 colonnes, 2 lignes)
-  lcd.begin(16, 2);
+  lcd.init();
   
-  
-  lcd.setBacklight(HIGH);
+  // Active le rétroéclairage
+  lcd.backlight();
 }
  void loop() {
    distanceActuelle = mesurerDistance();
@@ -53,11 +55,11 @@ void setup() {
     if (distancePrecedente > 10 && distanceActuelle <= 10) {
      compteur ++;
      lcd.setCursor(0, 0);
-     lcd.print("Bonne priere!!");
+     lcd.print("Bonne exercice!!");
      
   // Placement sur la deuxième ligne (colonne 0, ligne 1)
      lcd.setCursor(0, 1);
-     lcd.print(" soudjoud"  );
+     lcd.print("repetition:"  );
      lcd.print(compteur);
     }
 
@@ -67,4 +69,3 @@ void setup() {
 
   delay(100);
 }
-
