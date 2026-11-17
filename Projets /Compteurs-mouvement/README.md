@@ -65,7 +65,7 @@ Ces difficultés m'ont permis de mieux comprendre l'interaction entre les compos
 [📸 Voir la photo du montage](./WhatsApp%20Image%202026-11-16%20at%2012.43.25.jpeg)
 Il s'agit du montage avec un 7 segment comme afficheur 
 
-![Photo finale du compteur](projet_final.jpeg) résultat final du projet 
+[📷 Voir la photo finale du projet](projet_final.jpeg)
 
 ## 10. Commentaire 
 J'ai commencé par tester le programme avec un digit 7 segment , ce qui m'a permis de comprendre le fonctionnement de l'appareil et sont branchement . Par la même occasion j'ai eu a rencontrer des problèmes par rapport a la nature du 7 segment si il s'agit d'un anode commun le branchement commun se fait sur le 5v par contre si il s'agit d'un cathode commun le branchement ce fait sur le GND . Et par la meme occasion le code change en fonction de la nature de cette appareil . j'ai rencontrer un autre probleme avec le capteur , théoriquement j'ai travaillé avec un capteur ultrasonique 3 broches mais quand j'ai eu les pieces j'ai eu un capteur 4 broches ca change aussi le code . 
