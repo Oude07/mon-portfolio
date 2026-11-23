@@ -43,3 +43,6 @@ Il constitue une  étape de plus  dans mon apprentissage des systèmes embarqué
 ## 📷 Présentation du montage
 
 [voir la photo final](montage_final.jpeg)
+
+## difficulté 
+Sur ce projet j'ai eu des difficulté juste au niveau du code , la technologie utiliser a été maîtrisée. Le code était long a comprendre mais j'ai fini par comprendre qu'il fallait utiliser des fonctions pour quand j'ai utilisé un 7 segment, mais sans ca le code est abordable . 
