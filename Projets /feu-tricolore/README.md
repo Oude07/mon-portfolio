@@ -42,4 +42,4 @@ Il constitue une  étape de plus  dans mon apprentissage des systèmes embarqué
 
 ## 📷 Présentation du montage
 
-!![Montage final](montage_final.jpg)
+!![Montage final](montage_final.jpeg)
